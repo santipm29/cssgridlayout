@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #bdc3c7;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-template-areas: "menu-navegacion menu-navegacion menu-navegacion menu-navegacion"
+    "contenido contenido contenido aside"
+    "footer footer footer footer";
+}
+
+.menu-navegacion {
+  grid-area: menu-navegacion;
+}
+
+.contenido {
+  grid-area: contenido;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-container .menu-navegacion {
+  background-color: #ffffff;
+  margin: 5px 5px 0 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-navegacion .menu{
+  height: 100px;
+}
+
+.grid-container .contenido {
+  background: #ffffff;
+  margin-left: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container .aside {
+  background: #ffffff;
+  margin: 0px 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.grid-container .footer {
+  background: #ffffff;
+  margin: 0px 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 576px) { 
+  .grid-container{
+    grid-template-areas: "menu-navegacion menu-navegacion menu-navegacion menu-navegacion"
+    "contenido contenido contenido contenido"
+    "aside aside aside aside"
+    "footer footer footer footer";
+  }
+ }
+
+
+@media (min-width: 768px) { 
+  .grid-container{
+    grid-template-areas: "menu-navegacion menu-navegacion menu-navegacion menu-navegacion"
+    "contenido contenido contenido aside"
+    "footer footer footer footer";
+  }
+ }
+
+
+@media (min-width: 992px) { 
+  .grid-container{
+    grid-template-areas: "menu-navegacion menu-navegacion menu-navegacion menu-navegacion"
+    "contenido contenido contenido aside"
+    "footer footer footer footer";
+  }
+ }
+
+
+@media (min-width: 1200px) { 
+  .grid-container{
+    grid-template-areas: "menu-navegacion menu-navegacion menu-navegacion menu-navegacion"
+    "contenido contenido contenido aside"
+    "footer footer footer footer";
+  }
+ }
